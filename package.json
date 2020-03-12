@@ -24,6 +24,8 @@
     "@ng-bootstrap/ng-bootstrap": "^6.0.0",
     "bootstrap": "^4.4.1",
     "firebase": "^7.10.0",
+    "firebase-tools": "^7.14.0",
+    "g": "^2.0.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
