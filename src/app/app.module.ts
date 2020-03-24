@@ -18,6 +18,12 @@ import { AdminProductsComponent } from './admin/admin-products/admin-products.co
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { LoginComponent } from './login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductFormComponent } from './admin/product-form/product-form.component';
+import { FormsModule } from '@angular/forms';
+import { CustomFormsModule } from 'ng2-validation';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { DataTableModule } from 'angular-4-data-table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,15 +36,20 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MyOrdersComponent,
     AdminProductsComponent,
     AdminOrdersComponent,
-    LoginComponent
+    LoginComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CustomFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    // DataTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

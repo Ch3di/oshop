@@ -1,1 +1,20 @@
-<p>admin-products works!</p>
+<p>
+  <a routerLink="/admin/products/new" class="btn btn-primary">New Product</a>
+</p>
+<input #query (keyup)="filter(query.value)"type="text" class="form-control" placeholder="Search...">
+<table class="table">
+    <thead>
+        <tr>
+            <td>Title</td>
+            <td>Price</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of filteredProducts; let n = index">
+            <td>{{ p['value']['title'] }}</td>
+            <td>{{ p['value']['price'] }}</td>
+            <td><a [routerLink]="['/admin/products', p['key']]">Edit</a></td>
+        </tr>
+    </tbody>
+</table>
