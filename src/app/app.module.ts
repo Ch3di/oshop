@@ -22,7 +22,10 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
 import { FormsModule } from '@angular/forms';
 import { CustomFormsModule } from 'ng2-validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { DataTableModule } from 'angular-4-data-table';
+import { FilterProductComponent } from './products/filter-product/filter-product.component';
+import { ProductCardComponent } from './product-card/product-card.component';
+
+
 
 @NgModule({
   declarations: [
@@ -37,7 +40,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AdminProductsComponent,
     AdminOrdersComponent,
     LoginComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    FilterProductComponent,
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,

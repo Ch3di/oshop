@@ -31,6 +31,7 @@
     "firebase-tools": "^7.14.0",
     "g": "^2.0.1",
     "jquery": "^3.4.1",
+    "mdbootstrap": "^4.14.1",
     "ng2-validation": "^4.2.0",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
