@@ -19,7 +19,7 @@ export class ProductFormComponent {
     private productService: ProductService,
     private categoryService: CategoryService,
     private router: Router) {
-    this.categories$ = categoryService.getCategories();
+    this.categories$ = categoryService.getAll();
 
     this.id = route.snapshot.paramMap.get('id');
     if (this.id) {
