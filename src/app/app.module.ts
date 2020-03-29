@@ -24,6 +24,7 @@ import { CustomFormsModule } from 'ng2-validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterProductComponent } from './products/filter-product/filter-product.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { ProductQuantityComponent } from './product-quantity/product-quantity.component';
 
 
 
@@ -43,6 +44,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
     ProductFormComponent,
     FilterProductComponent,
     ProductCardComponent,
+    ProductQuantityComponent,
   ],
   imports: [
     BrowserModule,

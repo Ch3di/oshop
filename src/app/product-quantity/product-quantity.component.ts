@@ -1,20 +1,22 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Product } from '../models/Product';
 import { ShoppingCartService } from '../../shopping-cart.service';
 
 @Component({
-  selector: 'product-card',
-  templateUrl: './product-card.component.html',
-  styleUrls: ['./product-card.component.css']
+  selector: 'product-quantity',
+  templateUrl: './product-quantity.component.html',
+  styleUrls: ['./product-quantity.component.css']
 })
-export class ProductCardComponent {
-  // tslint:disable-next-line: no-input-rename
+export class ProductQuantityComponent {
   @Input('product') product;
-  @Input('active-actions') activeActions;
   @Input('shopping-cart') shoppingCart; 
   constructor(private cartService: ShoppingCartService) { }
 
   addToCart(){
     this.cartService.addToCart(this.product);
   }
+
+  removeFromCart() {
+    this.cartService.removeFromCart(this.product);
+  }
+
 }
