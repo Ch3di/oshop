@@ -1,0 +1,14 @@
+.thumbnail {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-size: cover;
+    display: inline-block;
+    align-self: center;
+}
+button.btn-danger {
+    margin: 10px;
+}
+p {
+    margin-top: 10px;
+}
