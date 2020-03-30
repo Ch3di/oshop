@@ -25,6 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterProductComponent } from './products/filter-product/filter-product.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductQuantityComponent } from './product-quantity/product-quantity.component';
+import { ShoppingCartSummaryComponent } from './shopping-cart-summary/shopping-cart-summary.component';
+import { ShippingFormComponent } from './shipping-form/shipping-form.component';
 
 
 
@@ -45,6 +47,8 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
     FilterProductComponent,
     ProductCardComponent,
     ProductQuantityComponent,
+    ShoppingCartSummaryComponent,
+    ShippingFormComponent,
   ],
   imports: [
     BrowserModule,
