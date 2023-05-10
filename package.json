@@ -28,7 +28,7 @@
     "angular-9-datatable": "^0.1.1",
     "bootstrap": "^4.4.1",
     "firebase": "^7.10.0",
-    "firebase-tools": "^7.14.0",
+    "firebase-tools": "^12.0.0",
     "font-awesome": "^4.7.0",
     "g": "^2.0.1",
     "jquery": "^3.4.1",
